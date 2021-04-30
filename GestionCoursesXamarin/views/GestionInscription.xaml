@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestionCoursesXamarin.views.GestionInscription"
+             x:Name="Gestinscrit"
+             >
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" BackgroundColor="Beige">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Gestion Inscription" Margin="0,0,0,0" Padding="0,0,0,0" FontFamily = "Lobster" FontSize="36" VerticalOptions="Center" BackgroundColor="Beige" TextColor="Navy" Grid.Column="0"/>
+                    <Button Text="Retour" FontFamily = "Lobster" FontSize="24" VerticalOptions="Center" BackgroundColor="Beige" TextColor="Navy" Grid.Column="1" Command="{Binding btnRetour}"/>
+                    <Label Text="{Binding Course.Num , StringFormat='Prénom : {0}'}" FontSize="15" TextColor="Black" Grid.Column="0" IsVisible="false"/>
+                </Grid>
+                <ListView x:Name="ListeInscriptions" Grid.Row="1"
+              BackgroundColor="Beige"
+              HasUnevenRows="True"
+                    ItemTapped="ListeInscriptions_ItemTapped"
+                    IsPullToRefreshEnabled="True"
+                    ItemsSource="{Binding ListCoureur}">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell >
+                                <Frame  CornerRadius="10"  BackgroundColor="White" Margin="10,15">
+                                    <Grid Padding="5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding Nom, StringFormat='Nom : {0}'}" FontFamily = "Lobster" FontSize="24" TextColor="Blue" Grid.Column="0"/>
+                                            <Label Text="{Binding Einscrit, StringFormat='inscript : {0}'}" FontFamily = "Lobster" FontSize="24" TextColor="Blue" Grid.Column="1"/>
+                                            <Label Text="{Binding Num}" Grid.Column="0" IsVisible="false"/>
+                                            <Label Text="{Binding BindingContext.EstInscrit, Source={x:Reference Gestinscrit} , StringFormat='Inscrit : {0}'}" FontSize="15" TextColor="Black" Grid.Column="1">
+                                                <Label.FontFamily>
+                                                    <OnPlatform x:TypeArguments="x:String">
+                                                        <On Platform="iOS" Value="MarkerFelt-Thin" />
+                                                        <On Platform="Android" Value="Lobster-Regular" />
+                                                        <On Platform="UWP" Value="ArimaMadurai-Black" />
+                                                    </OnPlatform>
+                                                </Label.FontFamily>
+                                            </Label>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding Prenom , StringFormat='Prénom : {0}'}" FontSize="15" TextColor="Black" Grid.Column="0"/>
+                                            <Label Text="{Binding Age , StringFormat='Age : {0}'}" FontSize="15" TextColor="Black" Grid.Column="1">
+                                                <Label.FontFamily>
+                                                    <OnPlatform x:TypeArguments="x:String">
+                                                        <On Platform="iOS" Value="MarkerFelt-Thin" />
+                                                        <On Platform="Android" Value="Lobster-Regular" />
+                                                        <On Platform="UWP" Value="ArimaMadurai-Black" />
+                                                    </OnPlatform>
+                                                </Label.FontFamily>
+                                            </Label>
+
+                                        </Grid>
+                                    </Grid>
+                                    </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

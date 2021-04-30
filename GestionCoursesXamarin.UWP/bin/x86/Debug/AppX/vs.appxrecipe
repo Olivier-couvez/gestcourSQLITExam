@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=e052f6e8-7a78-4ad1-9e65-bf5bdd07b99a</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>8986D648B06E9328BF3F7882E5973D5CC4ECE2EA472B51FE0C358123FF0C8ED3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ffe5811a-0b95-443a-8883-2ce867c983dc_1.0.0.0_x86__t642jp02b0s9t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ffe5811a-0b95-443a-8883-2ce867c983dc_t642jp02b0s9t!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-30T12:16:18.299</Modified>
+      <Modified>2021-04-30T14:50:55.104</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\GestionCoursesXamarin.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\GestionCoursesXamarin.UWP.exe">
       <PackagePath>entrypoint\GestionCoursesXamarin.UWP.exe</PackagePath>
-      <Modified>2021-04-30T12:16:17.333</Modified>
+      <Modified>2021-04-30T14:50:54.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -45,6 +45,30 @@
     <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2021-02-05T00:15:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\sqlite-net-pcl\1.7.335\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2020-05-16T00:38:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\sqlitepclraw.bundle_green\2.0.3\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2020-05-01T12:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\sqlitepclraw.core\2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2020-05-01T12:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.3\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2020-04-07T17:14:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.3\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2020-05-01T12:35:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2018-09-18T17:38:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -74,9 +98,9 @@
       <PackagePath>Xamarin.Forms.PancakeView.dll</PackagePath>
       <Modified>2020-10-23T09:51:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin\bin\Debug\netstandard2.0\GestionCoursesXamarin.dll">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin\bin\Debug\netstandard2.0\GestionCoursesXamarin.dll">
       <PackagePath>GestionCoursesXamarin.dll</PackagePath>
-      <Modified>2021-04-30T13:01:19.265</Modified>
+      <Modified>2021-04-30T14:50:49.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -90,156 +114,156 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2021-02-12T02:08:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.371</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.371</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.372</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.372</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.375</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.375</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.375</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.378</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-04-30T07:46:27.378</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2021-04-30T07:46:27.380</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\GestionCoursesXamarin.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\GestionCoursesXamarin.UWP.xr.xml">
       <PackagePath>GestionCoursesXamarin.UWP.xr.xml</PackagePath>
       <Modified>2021-04-30T07:47:58.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-04-30T12:16:17.254</Modified>
+      <Modified>2021-04-30T14:50:54.171</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-04-30T12:16:17.254</Modified>
+      <Modified>2021-04-30T14:50:54.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -253,13 +277,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-07-09T22:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-04-30T11:04:46.085</Modified>
+      <Modified>2021-04-30T14:22:21.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\bin\x86\Debug\Core\GestionCoursesXamarin.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\bin\x86\Debug\Core\GestionCoursesXamarin.UWP.exe">
       <PackagePath>GestionCoursesXamarin.UWP.exe</PackagePath>
-      <Modified>2021-04-30T12:16:18.293</Modified>
+      <Modified>2021-04-30T14:50:55.100</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

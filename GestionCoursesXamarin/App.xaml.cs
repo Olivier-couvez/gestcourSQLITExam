@@ -3,6 +3,7 @@ using GestionCoursesXamarin.ViewModels;
 using GestionCoursesXamarin.views;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,6 +18,23 @@ namespace GestionCoursesXamarin
         EnregListeCoureurs sauvegardeC;
         EnregListeCourses sauvegardeCo;
         EnregListeInscrit sauvegardeI;
+
+        static Database database;
+
+        public static Database Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Courses.db3"));
+                }
+                return database;
+            }
+        }
+
+
+
         public App()
         {
             InitializeComponent();
@@ -65,7 +83,7 @@ namespace GestionCoursesXamarin
             ListeCoureurs.Add(new Coureur { Nom = "Delarre", Prenom = "Alexis", Age = 25, Sexe = "1" });
         }
 
-        public void InitListes()
+        public async void InitListes()
         {
             // lecture fichier pour récup des informations enregistrer sur les rovers
 
@@ -82,7 +100,17 @@ namespace GestionCoursesXamarin
             sauvegardeCo = new EnregListeCourses();
             if (sauvegardeCo.TestExistenceFichier() == true)
             {
-                ListeCourses = sauvegardeCo.recuperationListe(); // si une sauvegarde existe on la récupère
+                List<enrCourse> listenr = new List<enrCourse>();
+
+                listenr = await App.Database.GetcourseAsync();
+
+                for (int i= 0; i < listenr.Count;i++)
+                {
+                    ListeCourses.Add(new Course { Num = listenr[i]._num,  Nom = listenr[i]._nom, Lieu = listenr[i]._lieu, Distance = listenr[i]._distance });
+                }
+
+               
+                //ListeCourses = sauvegardeCo.recuperationListe(); // si une sauvegarde existe on la récupère
             }
             else
             {
@@ -104,11 +132,18 @@ namespace GestionCoursesXamarin
         {
         }
 
-        protected override void OnSleep()
+        protected override async void OnSleep()
         {
             sauvegardeC.sauveListe(ListeCoureurs);
             sauvegardeCo.sauveListe(ListeCourses);
             sauvegardeI.sauveListe(ListeInscription);
+
+            for (int i = 0; i < ListeCourses.Count; i++)
+            {
+                await App.Database.SaveCourseAsync(new enrCourse
+                { _num = ListeCourses[i].Num, _nom = ListeCourses[i].Nom, _lieu = ListeCourses[i].Lieu, _distance = ListeCourses[i].Distance });
+
+            }
         }
 
         protected override void OnResume()

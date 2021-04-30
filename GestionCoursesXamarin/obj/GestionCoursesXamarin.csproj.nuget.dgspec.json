@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestioncoursexam\\GestionCoursesXamarin\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {}
+    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestioncoursexam\\GestionCoursesXamarin\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
+    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestioncoursexam\\GestionCoursesXamarin\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
+        "projectUniqueName": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
         "projectName": "GestionCoursesXamarin",
-        "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestioncoursexam\\GestionCoursesXamarin\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
+        "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
         "packagesPath": "C:\\Users\\TPCDA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestioncoursexam\\GestionCoursesXamarin\\GestionCoursesXamarin\\obj\\",
+        "outputPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -68,6 +68,10 @@
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
               "version": "[2.3.0.759, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [

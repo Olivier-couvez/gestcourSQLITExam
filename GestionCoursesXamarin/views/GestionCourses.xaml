@@ -17,7 +17,7 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <Entry Grid.Row="1" Text="{Binding Course.Nom}" Placeholder="Nom de la course"/>
+                    <Entry Grid.Row="1" Text="{Binding Course.Nom}"  Placeholder="Nom de la course"/>
                     <Entry Grid.Row="2" Text="{Binding Course.Lieu}" Placeholder="Le lieu"/>
                     <Entry Grid.Row="3" Text="{Binding Course.Distance}" Placeholder="La distance"/>
                 </Grid>

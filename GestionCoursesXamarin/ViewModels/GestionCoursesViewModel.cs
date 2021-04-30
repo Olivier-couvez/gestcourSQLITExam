@@ -44,6 +44,7 @@ namespace GestionCoursesXamarin.ViewModels
                 Malisteview.ItemsSource = null;
                 Malisteview.ItemsSource = App.ListeCourses;
                 Navigation.PopModalAsync();
+                Course = new Course();
             }
         }
         private void AnnulerCourseCommand()

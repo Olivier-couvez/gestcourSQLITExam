@@ -1,1 +1,1 @@
-C:\Users\TPCDA\Desktop\olivier\Agile\gestioncoursexam\GestionCoursesXamarin\GestionCoursesXamarin.UWP\GestionCoursesXamarin.UWP.csproj;x86
+C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\GestionCoursesXamarin.UWP.csproj;x86

@@ -52,13 +52,9 @@ namespace GestionCoursesXamarin
                 ListeInscription = new List<Inscription>();
             }
 
-
-            
-
             // Recup données serialisé
 
             InitListes();
-
 
 
             MainPage = new ListeCourses();
@@ -85,12 +81,22 @@ namespace GestionCoursesXamarin
 
         public async void InitListes()
         {
-            // lecture fichier pour récup des informations enregistrer sur les rovers
+            // lecture fichier pour récup des informations enregistrer sur les liste
 
             sauvegardeC = new EnregListeCoureurs();
             if (sauvegardeC.TestExistenceFichier() == true)
+
             {
-                ListeCoureurs = sauvegardeC.recuperationListe(); // si une sauvegarde existe on la récupère
+                List<enrCoureur> listenr = new List<enrCoureur>();
+
+                listenr = await App.Database.GetCoureurAsync();
+
+                for (int i = 0; i < listenr.Count; i++)
+                {
+                    ListeCoureurs.Add(new Coureur { Num = listenr[i]._num, Nom = listenr[i]._nom, Prenom = listenr[i]._prenom, Age = listenr[i]._age, Sexe = listenr[i]._sexe, Einscrit = listenr[i]._einscrit});
+                }
+
+                //ListeCoureurs = sauvegardeC.recuperationListe(); // si une sauvegarde existe on la récupère
             }
             else
             {
@@ -120,12 +126,18 @@ namespace GestionCoursesXamarin
             sauvegardeI = new EnregListeInscrit();
             if (sauvegardeI.TestExistenceFichier() == true)
             {
-                ListeInscription = sauvegardeI.recuperationListe(); // si une sauvegarde existe on la récupère
+                List<enrInsciption> listenr = new List<enrInsciption>();
+
+                listenr = await App.Database.GetInscriptionAsync();
+
+                for (int i = 0; i < listenr.Count; i++)
+                {
+                    ListeInscription.Add(new Inscription { Num = listenr[i]._num, IdxCoureur = listenr[i]._idxCoureur, IdxCourse = listenr[i]._idxCourse });
+                }
+
+                //ListeInscription = sauvegardeI.recuperationListe(); // si une sauvegarde existe on la récupère
             }
-            else
-            {
-                InitListeCourse();
-            }
+            
         }
 
         protected override void OnStart()
@@ -138,12 +150,23 @@ namespace GestionCoursesXamarin
             sauvegardeCo.sauveListe(ListeCourses);
             sauvegardeI.sauveListe(ListeInscription);
 
-            for (int i = 0; i < ListeCourses.Count; i++)
-            {
-                await App.Database.SaveCourseAsync(new enrCourse
-                { _num = ListeCourses[i].Num, _nom = ListeCourses[i].Nom, _lieu = ListeCourses[i].Lieu, _distance = ListeCourses[i].Distance });
+                for (int i = 0; i < ListeCourses.Count; i++)
+                {
+                    await App.Database.SaveCourseAsync(new enrCourse
+                    { _num = ListeCourses[i].Num, _nom = ListeCourses[i].Nom, _lieu = ListeCourses[i].Lieu, _distance = ListeCourses[i].Distance });
+                }
 
-            }
+                for (int i = 0; i < ListeCoureurs.Count; i++)
+                {
+                    await App.Database.SaveCoureurAsync(new enrCoureur
+                    { _num = ListeCoureurs[i].Num, _nom = ListeCoureurs[i].Nom, _prenom = ListeCoureurs[i].Prenom, _age = ListeCoureurs[i].Age, _sexe = ListeCoureurs[i].Sexe, _einscrit = ListeCoureurs[i].Einscrit });
+                }
+
+                for (int i = 0; i < ListeInscription.Count; i++)
+                {
+                    await App.Database.SaveInscriptionAsync(new enrInsciption
+                    { _num = ListeInscription[i].Num, _idxCoureur = ListeInscription[i].IdxCoureur, _idxCourse = ListeInscription[i].IdxCourse });
+                }
         }
 
         protected override void OnResume()

@@ -34,7 +34,11 @@ namespace GestionCoursesXamarin.ViewModels
             AddCourse = new Command(AddCourseAction);
             Navigation = navigation;
             MaListeView = maListView;
+            MaListeView.ItemsSource = null;
+            MaListeView.ItemsSource = App.ListeCourses;
         }
+
+        
 
         private void AddCoureurAction()
         {

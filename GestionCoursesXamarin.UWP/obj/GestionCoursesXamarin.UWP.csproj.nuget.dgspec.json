@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj": {}
+    "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj": {
+    "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
+        "projectUniqueName": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
         "projectName": "GestionCoursesXamarin.UWP",
-        "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
-        "packagesPath": "C:\\Users\\TPCDA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\obj\\",
+        "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
+        "packagesPath": "C:\\Users\\Virus\\.nuget\\packages\\",
+        "outputPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -20,7 +20,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\TPCDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Virus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -35,8 +35,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
-                "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj"
+              "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
+                "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj"
               }
             }
           }
@@ -101,14 +101,14 @@
         }
       }
     },
-    "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
+    "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
+        "projectUniqueName": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
         "projectName": "GestionCoursesXamarin",
-        "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
-        "packagesPath": "C:\\Users\\TPCDA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\obj\\",
+        "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj",
+        "packagesPath": "C:\\Users\\Virus\\.nuget\\packages\\",
+        "outputPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -116,7 +116,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\TPCDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Virus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -181,7 +181,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

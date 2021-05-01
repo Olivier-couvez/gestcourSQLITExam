@@ -15,12 +15,13 @@ namespace GestionCoursesXamarin.Models
 
         public Inscription()
         {
-            Num = NbCourses++;
+            _num = NbCourses++;
         }
 
-        public static int NbCourses { get => _nbInsciption; set { _nbInsciption = value; } }
+
         public int Num { get => _num; set { _num = value; } }
         public int IdxCoureur { get => _idxCoureur; set { _idxCoureur = value; OnPropertyChanged(); } }
         public int IdxCourse { get => _idxCourse; set { _idxCourse = value; OnPropertyChanged(); } }
+        public static int NbCourses { get => _nbInsciption; set { _nbInsciption = value; } }
     }
 }

@@ -16,7 +16,7 @@ namespace GestionCoursesXamarin.Models
 
         public Course( )
         {
-            Num = NbCourses++;
+            _num = NbCourses++;
         }
 
         public static int NbCourses { get => _nbCourses; set { _nbCourses = value; } }

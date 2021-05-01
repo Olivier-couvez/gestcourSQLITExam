@@ -36,27 +36,47 @@ namespace GestionCoursesXamarin.ViewModels
 
         public void MajDonnees(ItemTappedEventArgs e, int NumCourse)
         {
+            bool ecritOk = true;
+            Inscrit = new Inscription();
             var selecteditem = (Coureur)e.Item;
             Inscrit.IdxCoureur = selecteditem.Num;
             Inscrit.IdxCourse = NumCourse;
-            App.ListeInscription.Add(Inscrit);
-            App.ListeCoureurs[selecteditem.Num].Einscrit = true;
-            EstIsncrit = "oui";
+            foreach(Inscription inscript in App.ListeInscription)
+            {
+                if (inscript.IdxCoureur == Inscrit.IdxCoureur && Inscrit.IdxCourse == NumCourse)
+                {
+                    ecritOk = false;
+                }       
+            }
+            if (ecritOk == true)
+            {
+                App.ListeInscription.Add(Inscrit);
+                App.ListeCoureurs[selecteditem.Num-1].Einscrit = true;
+                EstIsncrit = "oui";
+            }
+
+
+
         }
 
         public void IntialisationCoureur(int NumCourse)
         {
-            foreach(Coureur coureur in App.ListeCoureurs)
+            foreach (Coureur coureur in App.ListeCoureurs)
+            {
+                EstIsncrit = "non";
+                App.ListeCoureurs[coureur.Num-1].Einscrit = false;
+            }
+
+
+
+                foreach (Coureur coureur in App.ListeCoureurs)
             {
                 foreach (Inscription inscript in App.ListeInscription)
                 {
-                    if ((inscript.IdxCoureur == coureur.Num) && (inscript.IdxCourse == NumCourse ))
+                    if ((inscript.IdxCoureur == coureur.Num-1) && (inscript.IdxCourse == NumCourse ))
                     {
                         EstIsncrit = "oui";
-                    }
-                    else
-                    {
-                        EstIsncrit = "non";
+                        App.ListeCoureurs[coureur.Num-1].Einscrit = true;
                     }
                 }
                

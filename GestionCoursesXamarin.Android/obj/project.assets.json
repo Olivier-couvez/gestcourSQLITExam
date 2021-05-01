@@ -2538,18 +2538,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TPCDA\\.nuget\\packages\\": {},
+    "C:\\Users\\Virus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.Android\\GestionCoursesXamarin.Android.csproj",
+      "projectUniqueName": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.Android\\GestionCoursesXamarin.Android.csproj",
       "projectName": "GestionCoursesXamarin.Android",
-      "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.Android\\GestionCoursesXamarin.Android.csproj",
-      "packagesPath": "C:\\Users\\TPCDA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.Android\\obj\\",
+      "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.Android\\GestionCoursesXamarin.Android.csproj",
+      "packagesPath": "C:\\Users\\Virus\\.nuget\\packages\\",
+      "outputPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2557,7 +2557,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\TPCDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Virus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -2572,8 +2572,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
-              "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj"
+            "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
+              "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj"
             }
           }
         }

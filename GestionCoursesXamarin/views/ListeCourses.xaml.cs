@@ -19,11 +19,9 @@ namespace GestionCoursesXamarin.views
             InitializeComponent();
             BindingContext = new ListeCoursesViewModels(Navigation, ListeDesCourses);
     }
-
         private void ListeDesCourses_ItemTapped(object sender, ItemTappedEventArgs e) 
         {
             ((ListeCoursesViewModels) BindingContext).OuvrirFenInscription(e);
         }
-
     }
 }

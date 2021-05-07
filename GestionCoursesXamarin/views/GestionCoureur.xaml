@@ -18,9 +18,13 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <Entry Grid.Row="1" Text="{Binding Coureur.Prenom}" Placeholder="Prénom"/>
+                    <Entry Grid.Row="1" Text="{Binding Coureur.Prenom}" Placeholder="Prénom">
+                        <Entry.Behaviors>
+                            <behavior:MaxLengthCheckValidator MaxLength="50"/>
+                        </Entry.Behaviors>
+                    </Entry>
                     <Entry Grid.Row="2" Text="{Binding Coureur.Nom}" Placeholder="Nom"/>
-                    <Entry Grid.Row="3" Text="{Binding Coureur.Age}" Placeholder="Age"/>
+                    <Entry Grid.Row="3" Text="{Binding Coureur.Age}" Placeholder="Age" Keyboard="Numeric/>
                     <Entry Grid.Row="4" Text="{Binding Coureur.Sexe}" Placeholder="Sexe"/>
                 </Grid>
                 

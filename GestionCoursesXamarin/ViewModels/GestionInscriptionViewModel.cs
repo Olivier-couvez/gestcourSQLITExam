@@ -66,8 +66,6 @@ namespace GestionCoursesXamarin.ViewModels
                 App.ListeInscription.Add(Inscrit);
                 App.Database.SaveInscription(Inscrit.ToInscriptionBasique());
                 App.ListeCoureurs[selecteditem.Num].Einscrit = true;
-                //MaListeView.ItemsSource = null;
-                //MaListeView.ItemsSource = App.Database.GetCoureur();
                 ListCoureur.Where(x => x.Num == selecteditem.Num).FirstOrDefault().Einscrit = true;
                 EstIsncrit = "oui";
             }

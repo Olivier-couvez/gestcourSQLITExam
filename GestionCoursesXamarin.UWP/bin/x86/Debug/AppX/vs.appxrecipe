@@ -100,7 +100,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin\bin\Debug\netstandard2.0\GestionCoursesXamarin.dll">
       <PackagePath>GestionCoursesXamarin.dll</PackagePath>
-      <Modified>2021-05-07T13:20:30.042</Modified>
+      <Modified>2021-05-07T13:55:02.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TPCDA\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

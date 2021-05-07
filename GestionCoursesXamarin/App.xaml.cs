@@ -1,4 +1,5 @@
-﻿using GestionCoursesXamarin.Models;
+﻿using GestionCoursesXamarin.Extension;
+using GestionCoursesXamarin.Models;
 using GestionCoursesXamarin.ViewModels;
 using GestionCoursesXamarin.views;
 using System;
@@ -79,94 +80,21 @@ namespace GestionCoursesXamarin
             ListeCoureurs.Add(new Coureur { Nom = "Delarre", Prenom = "Alexis", Age = 25, Sexe = "1" });
         }
 
-        public async void InitListes()
+        public void InitListes()
         {
-            // lecture fichier pour récup des informations enregistrer sur les liste
+                App.ListeCoureurs = App.Database.GetCoureur();
+    
+                App.ListeCourses = App.Database.GetCourse();
 
-            sauvegardeC = new EnregListeCoureurs();
-            if (sauvegardeC.TestExistenceFichier() == true)
-
-            {
-                List<enrCoureur> listenr = new List<enrCoureur>();
-
-                listenr = await App.Database.GetCoureurAsync();
-
-                for (int i = 0; i < listenr.Count; i++)
-                {
-                    ListeCoureurs.Add(new Coureur { Num = listenr[i]._num, Nom = listenr[i]._nom, Prenom = listenr[i]._prenom, Age = listenr[i]._age, Sexe = listenr[i]._sexe, Einscrit = listenr[i]._einscrit});
-                }
-
-                //ListeCoureurs = sauvegardeC.recuperationListe(); // si une sauvegarde existe on la récupère
-            }
-            else
-            {
-                InitListeCoureur();
-            }
-
-            sauvegardeCo = new EnregListeCourses();
-            if (sauvegardeCo.TestExistenceFichier() == true)
-            {
-                List<enrCourse> listenr = new List<enrCourse>();
-
-                listenr = await App.Database.GetcourseAsync();
-
-                for (int i= 0; i < listenr.Count;i++)
-                {
-                    ListeCourses.Add(new Course { Num = listenr[i]._num,  Nom = listenr[i]._nom, Lieu = listenr[i]._lieu, Distance = listenr[i]._distance });
-                }
-
-               
-                //ListeCourses = sauvegardeCo.recuperationListe(); // si une sauvegarde existe on la récupère
-            }
-            else
-            {
-                InitListeCourse();
-            }
-
-            sauvegardeI = new EnregListeInscrit();
-            if (sauvegardeI.TestExistenceFichier() == true)
-            {
-                List<enrInsciption> listenr = new List<enrInsciption>();
-
-                listenr = await App.Database.GetInscriptionAsync();
-
-                for (int i = 0; i < listenr.Count; i++)
-                {
-                    ListeInscription.Add(new Inscription { Num = listenr[i]._num, IdxCoureur = listenr[i]._idxCoureur, IdxCourse = listenr[i]._idxCourse });
-                }
-
-                //ListeInscription = sauvegardeI.recuperationListe(); // si une sauvegarde existe on la récupère
-            }
-            
+                App.ListeInscription = App.Database.GetInscription();         
         }
 
         protected override void OnStart()
         {
         }
 
-        protected override async void OnSleep()
+        protected override void OnSleep()
         {
-            sauvegardeC.sauveListe(ListeCoureurs);
-            sauvegardeCo.sauveListe(ListeCourses);
-            sauvegardeI.sauveListe(ListeInscription);
-
-                for (int i = 0; i < ListeCourses.Count; i++)
-                {
-                    await App.Database.SaveCourseAsync(new enrCourse
-                    { _num = ListeCourses[i].Num, _nom = ListeCourses[i].Nom, _lieu = ListeCourses[i].Lieu, _distance = ListeCourses[i].Distance });
-                }
-
-                for (int i = 0; i < ListeCoureurs.Count; i++)
-                {
-                    await App.Database.SaveCoureurAsync(new enrCoureur
-                    { _num = ListeCoureurs[i].Num, _nom = ListeCoureurs[i].Nom, _prenom = ListeCoureurs[i].Prenom, _age = ListeCoureurs[i].Age, _sexe = ListeCoureurs[i].Sexe, _einscrit = ListeCoureurs[i].Einscrit });
-                }
-
-                for (int i = 0; i < ListeInscription.Count; i++)
-                {
-                    await App.Database.SaveInscriptionAsync(new enrInsciption
-                    { _num = ListeInscription[i].Num, _idxCoureur = ListeInscription[i].IdxCoureur, _idxCourse = ListeInscription[i].IdxCourse });
-                }
         }
 
         protected override void OnResume()

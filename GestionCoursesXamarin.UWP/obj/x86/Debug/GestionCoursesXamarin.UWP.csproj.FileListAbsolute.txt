@@ -206,3 +206,4 @@ E:\xamarin\gestcourSQLITExam\GestionCoursesXamarin.UWP\obj\x86\Debug\ProjectArch
 E:\xamarin\gestcourSQLITExam\GestionCoursesXamarin.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160679180000000.json
 E:\xamarin\gestcourSQLITExam\GestionCoursesXamarin.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
 E:\xamarin\gestcourSQLITExam\GestionCoursesXamarin.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
+C:\Users\TPCDA\Desktop\olivier\Agile\gestcourSQLITExam\GestionCoursesXamarin.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json

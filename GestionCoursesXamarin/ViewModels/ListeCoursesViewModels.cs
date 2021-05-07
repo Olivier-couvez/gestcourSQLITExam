@@ -28,14 +28,14 @@ namespace GestionCoursesXamarin.ViewModels
             {
                 ListCourses = new List<Course>();
             }
-            ListCourses = App.ListeCourses;
+            ListCourses = App.Database.GetCourse();
 
             AddCoureur = new Command(AddCoureurAction);
             AddCourse = new Command(AddCourseAction);
             Navigation = navigation;
             MaListeView = maListView;
             MaListeView.ItemsSource = null;
-            MaListeView.ItemsSource = App.ListeCourses;
+            MaListeView.ItemsSource = App.Database.GetCourse();
         }
 
         
@@ -49,7 +49,7 @@ namespace GestionCoursesXamarin.ViewModels
         {
             Navigation.PushModalAsync(new GestionCourses(MaListeView));
             MaListeView.ItemsSource = null;
-            MaListeView.ItemsSource = App.ListeCourses;
+            MaListeView.ItemsSource = App.Database.GetCourse();
         }
 
         public void OuvrirFenInscription(ItemTappedEventArgs e)

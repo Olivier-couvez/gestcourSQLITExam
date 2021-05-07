@@ -1,4 +1,6 @@
 ﻿using GestionCoursesXamarin.Models;
+using GestionCoursesXamarin.Extension;
+
 using GestionCoursesXamarin.views;
 using System;
 using System.Collections.Generic;
@@ -39,7 +41,7 @@ namespace GestionCoursesXamarin.ViewModels
 
             if(!string.IsNullOrEmpty(Coureur.Prenom) || !string.IsNullOrEmpty(Coureur.Nom) || !string.IsNullOrEmpty(Coureur.Sexe) || !string.IsNullOrEmpty(Coureur.Age.ToString()))
             {
-                App.ListeCoureurs.Add(Coureur);
+                App.Database.SaveCoureur(Coureur.ToCoureurBasique());
 
                 Navigation.PopModalAsync();
             }

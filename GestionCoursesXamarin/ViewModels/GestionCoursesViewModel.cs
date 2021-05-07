@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using GestionCoursesXamarin.Extension;
 
 namespace GestionCoursesXamarin.ViewModels
 {
@@ -40,9 +41,9 @@ namespace GestionCoursesXamarin.ViewModels
 
             if (!string.IsNullOrEmpty(Course.Nom) || !string.IsNullOrEmpty(Course.Lieu) || !string.IsNullOrEmpty(Course.Distance.ToString()))
             {
-                App.ListeCourses.Add(Course);
                 Malisteview.ItemsSource = null;
-                Malisteview.ItemsSource = App.ListeCourses;
+                App.Database.SaveCourse(Course.ToCourseBasique());
+                Malisteview.ItemsSource = App.Database.GetCourse();
                 Navigation.PopModalAsync();
                 Course = new Course();
             }

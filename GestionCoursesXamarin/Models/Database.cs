@@ -2,63 +2,82 @@
 using GestionCoursesXamarin.ViewModels;
 using System.Threading.Tasks;
 using SQLite;
+using System.Linq;
+using GestionCoursesXamarin.Extension;
 
 namespace GestionCoursesXamarin.Models
-{ 
+{
     public class Database
     {
-        readonly SQLiteAsyncConnection _database;
+        //readonly SQLiteAsyncConnection _database;
+        readonly SQLiteConnection _database;
 
         public Database(string dbPath)
         {
-            _database = new SQLiteAsyncConnection(dbPath);
-            _database.CreateTableAsync<enrCourse>().Wait();
-            _database.CreateTableAsync<enrCoureur>().Wait();
-            _database.CreateTableAsync<enrInsciption>().Wait();
+            _database = new SQLiteConnection(dbPath);
+            _database.CreateTable<enrCourse>();
+            _database.CreateTable<enrCoureur>();
+            _database.CreateTable<enrInsciption>();
         }
 
-        public Task<List<enrCourse>> GetcourseAsync()
+        public List<Course> GetCourse()
         {
-            return _database.Table<enrCourse>().ToListAsync();
+            List<Course> courses = new List<Course>();
+            foreach (enrCourse enr in _database.Table<enrCourse>().ToList())
+            {
+                courses.Add(enr.ToCourse());
+            }
+            return courses;
         }
 
-        public Task<int> SaveCourseAsync(enrCourse course)
-        {     
-                return _database.InsertAsync(course);
+        public int SaveCourse(enrCourse course)
+        {
+            return _database.Insert(course);
         }
 
-        public Task<int> DeleteCourseAsync(enrCourse course)
+        public int DeleteCourse(enrCourse course)
         {
-            return _database.DeleteAsync(course);
+            return _database.Delete(course);
         }
 
-        public Task<List<enrCoureur>> GetCoureurAsync()
+        public List<Coureur> GetCoureur()
         {
-            return _database.Table<enrCoureur>().ToListAsync();
+            List<Coureur> coureur = new List<Coureur>();
+            foreach (enrCoureur enr in _database.Table<enrCoureur>().ToList())
+            {
+                coureur.Add(enr.ToCoureur());
+            }
+            return coureur;
         }
 
-        public Task<int> SaveCoureurAsync(enrCoureur coureur)
+        public int SaveCoureur(enrCoureur coureur)
         {
-                return _database.InsertAsync(coureur);
-        }
-        public Task<int> DeleteCoureurAsync(enrCoureur coureur)
-        {
-            return _database.DeleteAsync(coureur);
+            return _database.Insert(coureur);
         }
 
-        public Task<List<enrInsciption>> GetInscriptionAsync()
+        public int DeleteCoureur(enrCoureur coureur)
         {
-            return _database.Table<enrInsciption>().ToListAsync();
+            return _database.Delete(coureur);
         }
 
-        public Task<int> SaveInscriptionAsync(enrInsciption Inscrpt)
+        public List<Inscription> GetInscription()
         {
-                return _database.InsertAsync(Inscrpt);
-        }
-        public Task<int> DeleteInscriptionAsync(enrInsciption Inscrpt)
-        {
-            return _database.DeleteAsync(Inscrpt);
+            List<Inscription> Inscription = new List<Inscription>();
+            foreach (enrInsciption enr in _database.Table<enrInsciption>().ToList())
+            {
+                Inscription.Add(enr.ToInscription());
+            }
+            return Inscription;
         }
 
-     }
+        public int SaveInscription(enrInsciption Inscrpt)
+        {
+            return _database.Insert(Inscrpt);
+        }
+        public int DeleteInscriptionAsync(enrInsciption Inscrpt)
+        {
+            return _database.Delete(Inscrpt);
+        }
+
+    }
 }

@@ -10920,7 +10920,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Virus\\.nuget\\packages\\": {},
+    "C:\\Users\\TPCDA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -10928,11 +10928,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
       "projectName": "GestionCoursesXamarin.UWP",
-      "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
-      "packagesPath": "C:\\Users\\Virus\\.nuget\\packages\\",
-      "outputPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\obj\\",
+      "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\GestionCoursesXamarin.UWP.csproj",
+      "packagesPath": "C:\\Users\\TPCDA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10941,7 +10941,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Virus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TPCDA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -10956,8 +10956,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
-              "projectPath": "E:\\xamarin\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj"
+            "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj": {
+              "projectPath": "C:\\Users\\TPCDA\\Desktop\\olivier\\Agile\\gestcourSQLITExam\\GestionCoursesXamarin\\GestionCoursesXamarin.csproj"
             }
           }
         }

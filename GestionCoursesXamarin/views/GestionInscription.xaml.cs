@@ -19,8 +19,7 @@ namespace GestionCoursesXamarin.views
         public GestionInscription(ItemTappedEventArgs e)
         {
             InitializeComponent();
-            BindingContext = new GestionInscriptionViewModel(Navigation);
-            ListeInscriptions.ItemsSource = App.ListeCoureurs;
+            BindingContext = new GestionInscriptionViewModel(Navigation, ListeInscriptions);
             var selecteditem = (Course)e.Item;
             numCourses = selecteditem.Num;
         }

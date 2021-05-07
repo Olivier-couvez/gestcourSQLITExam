@@ -46,7 +46,7 @@
                                             <Label Text="{Binding Nom, StringFormat='Nom : {0}'}" FontFamily = "Lobster" FontSize="24" TextColor="Blue" Grid.Column="0"/>
                                             <Label Text="{Binding Einscrit, StringFormat='inscript : {0}'}" FontFamily = "Lobster" FontSize="24" TextColor="Blue" Grid.Column="1"/>
                                             <Label Text="{Binding Num}" Grid.Column="0" IsVisible="false"/>
-                                            <Label Text="{Binding BindingContext.EstInscrit, Source={x:Reference Gestinscrit} , StringFormat='Inscrit : {0}'}" FontSize="15" TextColor="Black" Grid.Column="1">
+                                            <Label Text="{Binding BindingContext.EstInscrit, Source={x:Reference Gestinscrit} , StringFormat='Est inscrit : {0}'}" FontSize="15" TextColor="Black" Grid.Column="1">
                                                 <Label.FontFamily>
                                                     <OnPlatform x:TypeArguments="x:String">
                                                         <On Platform="iOS" Value="MarkerFelt-Thin" />
